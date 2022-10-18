@@ -73,7 +73,7 @@ class DrawHamburger{ //Define the class
     this.r = r;
   }
 
-  drawhamburger(){//Define the first method (how the object will look like when it will appear)
+  drawhamburger(){//Call the first method (how the object will look like when it will appear)
     push();
     strokeWeight(1.5);
     stroke(0);
@@ -92,7 +92,7 @@ class DrawHamburger{ //Define the class
     pop();
   }
 
-  move(){//Define the second method (how the object will move)
+  move(){//Call the second method (how the object will move)
     let s = map(mouseX, 0, width, 0, 4);
     this.y = this.y + s + this.r;
     if (this.y - this.h - 100 > height) {
